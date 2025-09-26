@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.icon-hover-animation{
+  @apply cursor-pointer hover:scale-[1.2] transition
+}
