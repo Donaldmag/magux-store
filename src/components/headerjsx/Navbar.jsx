@@ -9,7 +9,11 @@ function Navbar() {
     <>
       <header className="bg-transparent">
         <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-3 text-blue-400" href="#">
+          <Link
+            to="/"
+            className="flex items-center gap-3 text-blue-400"
+            href="#"
+          >
             <img src={maguxStoreLogo} alt="magux-store logo" />
             <h3 className="font-bold text-xl -mt-1">Magux Store</h3>
           </Link>
@@ -22,16 +26,22 @@ function Navbar() {
 
             <div className="flex items-center gap-4">
               <div className="flex sm:gap-4 gap-4">
-                <Heart
-                  size={24}
-                  fill="black"
-                  className="icon-hover-animation"
-                />
-                <ShoppingBag
-                  color="#51a2ff"
-                  size={24}
-                  className="icon-hover-animation"
-                />
+                <span className="flex items-center gap-2">
+                  <Heart
+                    size={24}
+                    fill="black"
+                    className="icon-hover-animation"
+                  />
+                  <span className="sm:block hidden">Favorites</span>
+                </span>
+                <span className="flex items-center gap-2">
+                  <ShoppingBag
+                    color="#51a2ff"
+                    size={24}
+                    className="icon-hover-animation"
+                  />
+                  <span className="sm:block hidden">Cart</span>
+                </span>
               </div>
 
               <button className="block rounded-full bg-white shadow shadow-slate-200 p-1.5 text-gray-600 hover:text-gray-600/75 md:hidden icon-hover-animation">
