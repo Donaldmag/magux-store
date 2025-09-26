@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/headercss/Navbar";
+import Navbar from "./components/headerjsx/Navbar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 
@@ -25,7 +25,7 @@ function App() {
 
       <div className="absolute w-full h-full z-100">
         <Navbar />
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
