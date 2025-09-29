@@ -1,0 +1,60 @@
+// import SelectDropdown from "../dropdowns/SelectDropdown";
+import SelectDropdownVariant from "../dropdowns/SelectDropdownVariant";
+import { sizes, colors } from "../../data/data";
+import FlexibleButton from "../buttons/FlexibleButton";
+
+export default function ProductCard() {
+  return (
+    <a
+      href="#"
+      className="block rounded-lg p-4 shadow-sm border-zinc-950/10 bg-white"
+    >
+      <img
+        alt=""
+        src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        className="h-56 w-full rounded-md object-cover"
+      />
+
+      <div className="mt-2">
+        <dl>
+          <div>
+            <dt className="sr-only">Product name</dt>
+            <dd className="font-medium text-sm leading-8">
+              123 Wallaby Avenue, Park Road
+            </dd>
+          </div>
+
+          <div>
+            <dt className="sr-only">Price</dt>
+            <dd className="text-md text-black font-medium leading-8">
+              $240,000
+            </dd>
+          </div>
+        </dl>
+
+        <div className="mt-2 flex lg:justify-start justify-between items-center gap-4 text-xs ">
+          <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+            <div className="mt-1.5 sm:mt-0">
+              {/* <SelectDropdown /> */}
+              <SelectDropdownVariant data={sizes} name={"Sizes"} />
+            </div>
+          </div>
+
+          <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+            <div className="mt-1.5 sm:mt-0">
+              <SelectDropdownVariant data={colors} name={"Colors"} />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between lg:gap-1.5 gap-1 mt-3">
+          <FlexibleButton mode="" btnText="BUY NOW" />
+          <FlexibleButton mode="icon" />
+        </div>
+        <div>
+          <FlexibleButton mode="link" underlined="dashed" btnText="Click to see description" />
+        </div>
+      </div>
+    </a>
+  );
+}

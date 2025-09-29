@@ -1,7 +1,22 @@
+import ProductCard from "../components/cards/ProductCard";
+import SelectDropdown from "../components/dropdowns/SelectDropdown";
+
 function Home() {
   return (
     <>
-      <h1 className="text-center p-8 h-full w-full">Home works</h1>
+      {/* <SelectDropdown/> */}
+      <div className="flex xl:flex-row flex-col w-full items-start p-4 w-full h-full lg:gap-8 gap- pt-20">
+        <div className="xl:w-1/5 w-full rounded-xl p-3">1</div>
+        <div className="xl:w-4/5 w-full rounded-xl p-3">
+          <div className="grid 2xl:grid-cols-5 xxl:grid-cols-4 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-3">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

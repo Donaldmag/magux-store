@@ -9,9 +9,9 @@ import { Check, ChevronDown, X } from "lucide-react";
 // Define input size variants (without file: part)
 const inputVariants = cva(
   `
-    flex w-full bg-background border border-input shadow-xs shadow-black/5 transition-[color,box-shadow] text-foreground placeholder:text-muted-foreground/80 
-    focus-visible:ring-ring/30 focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px]     
-    has-[[data-slot=combobox-input]:focus-visible]:ring-ring/30 
+    flex w-full bg-white shadow-xs shadow-black/5 transition-[color,box-shadow] text-foreground placeholder:text-muted-foreground/80 
+    focus-visible:ring-none focus-visible:border-none focus-visible:outline-none focus-visible:ring-none    
+    has-[[data-slot=combobox-input]:focus-visible]:ring-none 
     has-[[data-slot=combobox-input]:focus-visible]:border-ring
     has-[[data-slot=combobox-input]:focus-visible]:outline-none
     has-[[data-slot=combobox-input]:focus-visible]:ring-[3px]
@@ -23,7 +23,7 @@ const inputVariants = cva(
   {
     variants: {
       variant: {
-        lg: "py-1 min-h-10 px-4 text-sm rounded-md [&~[data-slot=combobox-icon]]:end-2.5 [&~[data-slot=combobox-clear]]:end-7",
+        lg: "py-1 min-h-10 px-4 text-sm rounded-full [&~[data-slot=combobox-icon]]:end-2.5 [&~[data-slot=combobox-clear]]:end-7",
         md: "py-1 min-h-8.5 px-3 text-[0.8125rem] leading-(--text-sm--line-height) rounded-md [&~[data-slot=combobox-icon]]:end-2 [&~[data-slot=combobox-clear]]:end-6",
         sm: "py-0.5 min-h-7 px-2.5 text-xs rounded-md [&~[data-slot=combobox-icon]]:end-1.75 [&~[data-slot=combobox-clear]]:end-5.75",
       },
