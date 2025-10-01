@@ -1,9 +1,13 @@
 import ProductCard from "../components/cards/ProductCard";
+import ExpandableCardsDemo from "../components/cards/ExpandableProductCard";
+import ProductCardVariant from "../components/cards/ProductCardVariant";
 import SelectDropdown from "../components/dropdowns/SelectDropdown";
 
 function Home() {
   return (
     <>
+      {/* <ExpandableCardsDemo /> */}
+      {/* <ProductCardVariant /> */}
       {/* <SelectDropdown/> */}
       <div className="flex xl:flex-row flex-col w-full items-start p-4 w-full h-full lg:gap-8 gap- pt-20">
         <div className="xl:w-1/5 w-full rounded-xl p-3">1</div>

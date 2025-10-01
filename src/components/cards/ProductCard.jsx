@@ -19,8 +19,8 @@ export default function ProductCard() {
         <dl>
           <div>
             <dt className="sr-only">Product name</dt>
-            <dd className="font-medium text-sm leading-8">
-              123 Wallaby Avenue, Park Road
+            <dd className="font-medium text-sm leading-5">
+              123 Wallaby Avenue, Park Road 123 Wallaby Avenue, Park Road
             </dd>
           </div>
 
@@ -32,7 +32,7 @@ export default function ProductCard() {
           </div>
         </dl>
 
-        <div className="mt-2 flex lg:justify-start justify-between items-center gap-4 text-xs ">
+        <div className="mt-2 flex lg:justify-start justify-between items-center gap-4 text-xs">
           <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
             <div className="mt-1.5 sm:mt-0">
               {/* <SelectDropdown /> */}
@@ -52,7 +52,11 @@ export default function ProductCard() {
           <FlexibleButton mode="icon" />
         </div>
         <div>
-          <FlexibleButton mode="link" underlined="dashed" btnText="Click to see description" />
+          <FlexibleButton
+            mode="link"
+            underlined="dashed"
+            btnText="Click to see description"
+          />
         </div>
       </div>
     </a>
