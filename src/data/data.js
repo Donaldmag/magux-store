@@ -36,6 +36,6 @@ export const sizes = [
 export const colors = [
   { id: 1, value: "#ffffff", name: "white" },
   { id: 2, value: "#000000", name: "black" },
-  { id: 3, value: "#ff0000", name:"red"  },
-  { id: 4, value: "#0000ff", name:"blue"  },
+  { id: 3, value: "#ff0000", name: "red" },
+  { id: 4, value: "#0000ff", name: "blue" },
 ];

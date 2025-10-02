@@ -29,10 +29,10 @@ function Navbar() {
 
             <div className="flex items-center gap-4">
               <div className="flex sm:gap-4 gap-4">
-                <span className="flex items-center gap-2 icon-hover-animation">
+                {/* <span className="flex items-center gap-2 icon-hover-animation">
                   <Heart size={24} fill="black"/>
                   <span className="md:block hidden">Favorites</span>
-                </span>
+                </span> */}
                 <span className="flex items-center gap-2 icon-hover-animation">
                   <ShoppingBag color="#51a2ff" size={24}/>
                   <span className="md:block hidden">Cart</span>
