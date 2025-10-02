@@ -16,6 +16,9 @@ const FloatingPanel = (props) => {
   };
   //   receives as props the classes of the main card component for responsiveness
 
+  const handleClose = () => {
+    console.log("Panel closed");
+  }
  const isSizes = option_name === "sizes";
  const values = isSizes ? sizesValues : colorsValues;
   return (
@@ -50,6 +53,7 @@ const FloatingPanel = (props) => {
         <FloatingPanelContent>
           <FloatingPanelForm
             onSubmit={handleSubmit}
+            closeFloatingPanel={handleClose}
             className="p-2 max-w-[100px]  relative"
           >
             <fieldset className="flex flex-wrap gap-3">
@@ -71,6 +75,10 @@ const FloatingPanel = (props) => {
                     value={item.value}
                     id={`${option_name}-${item.id}`}
                     className="sr-only"
+                    onChange={(e) => {
+                      console.log("Selected color:", e.target.value);
+                      handleClose;
+                    }}
                   />
                   {isSizes && (
                     <span className="font-semibold">{item.value}</span>

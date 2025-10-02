@@ -35,18 +35,29 @@ export default function ProductCard() {
 
         <div className="mt-2 flex md:justify-start justify-between items-center gap-2 text-xs">
           {/* <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2"> */}
-              {/* <SelectDropdown /> */}
-              {/* <SelectDropdownVariant data={sizes} name={"Sizes"} /> */}
-              <FloatingPanel data={colors} option_name={"colors"} />
-              <FloatingPanel data={sizes} option_name={"sizes"} />
+          {/* <SelectDropdown /> */}
+          {/* <SelectDropdownVariant data={sizes} name={"Sizes"} /> */}
+          <FloatingPanel data={colors} option_name={"colors"} />
+          <FloatingPanel data={sizes} option_name={"sizes"} />
           {/* </div> */}
         </div>
 
         <div className="flex items-center justify-between lg:gap-1.5 gap-1 mt-3">
-          <FlexibleButton mode="" btnText="BUY NOW" />
-          <FlexibleButton mode="icon" />
+          <FlexibleButton
+            mode=""
+            btnText="BUY NOW"
+            variant={"outline"}
+            customClass={
+              "rounded-full hover:bg-blue-400 transition-all hover:text-white border-zinc-300 hover:border-none"
+            }
+          />
+          <FlexibleButton
+            mode="icon"
+            variant={"primary"}
+            customClass={"rounded-full bg-blue-400"}
+          />
         </div>
-        <div className="hidden"> 
+        <div className="hidden">
           <FlexibleButton
             mode="link"
             underlined="dashed"
