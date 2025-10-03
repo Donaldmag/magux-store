@@ -2,7 +2,7 @@ import ProductCard from "../components/cards/ProductCard";
 import ExpandableCardsDemo from "../components/cards/ExpandableProductCard";
 import ProductCardVariant from "../components/cards/ProductCardVariant";
 import SelectDropdown from "../components/dropdowns/SelectDropdown";
-import Mainsidebar from "../components/sidebars/Mainsidebar";
+import MainSidebar from "../components/sidebars/Mainsidebar";
 import SortingToolbar from "../components/toolbars/SortingToolbar";
 import TagsFiltersContainer from "../components/containers/TagsFiltersContainer";
 // import MainSidebar from "../components/sidebars/MainSidebar";
@@ -14,9 +14,9 @@ function Home() {
       {/* <ExpandableCardsDemo /> */}
       {/* <ProductCardVariant /> */}
       {/* <SelectDropdown/> */}
-      <div className="flex xl:flex-row flex-col w-full items-start p-4 w-full h-full lg:gap- gap- pt-8">
+      <div className="flex xl:flex-row flex-col w-full items-start p-4 w-full h-full pt-8">
         <div className="xl:w-1/5 w-full rounded-xl p-3">
-          <Mainsidebar />
+          <MainSidebar />
           {/* <FloatingPanel /> */}
         </div>
         <div className="xl:w-4/5 w-full rounded-xl p-3 space-y-3 ">
