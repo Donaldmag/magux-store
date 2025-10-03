@@ -35,7 +35,7 @@ const FloatingPanel = (props) => {
                 ? values.map((item) => (
                     <span
                       key={item}
-                      className="-px-0.5 py-1 text-sm max-sm:text-xs font-medium"
+                      className="-px-0.5 py-1 text-[0.85rem] max-sm:text-xs font-medium"
                     >
                       {item}
                     </span>
