@@ -2,7 +2,7 @@ import ProductCard from "../components/cards/ProductCard";
 import ExpandableCardsDemo from "../components/cards/ExpandableProductCard";
 import ProductCardVariant from "../components/cards/ProductCardVariant";
 import SelectDropdown from "../components/dropdowns/SelectDropdown";
-import MainSidebar from "../components/sidebars/Mainsidebar";
+import MainSidebar from "../components/sidebars/MainSidebar";
 import SortingToolbar from "../components/toolbars/SortingToolbar";
 import TagsFiltersContainer from "../components/containers/TagsFiltersContainer";
 // import MainSidebar from "../components/sidebars/MainSidebar";
