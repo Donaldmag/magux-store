@@ -17,7 +17,7 @@ import {
 import { Briefcase, LifeBuoy, Mail, Settings, User } from "lucide-react";
 // import { toast } from "sonner";
 
-export default function Mainsidebar() {
+export default function MainSidebar() {
   return (
     <div className="w-full max-xl:max-w-[400px] overflow-hidden border border-zinc-50 shadow shadow-xs rounded-xl p-2 bg-white">
       <AccordionMenu
