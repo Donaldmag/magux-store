@@ -3,6 +3,7 @@ import maguxStoreLogo from "../../assets/magux-store.svg";
 import ComboBox from "./ComboBox";
 import { Heart, ShoppingBag, Menu } from "lucide-react";
 import ToolbarDynamicSearch from "../inputs/ToolbarDynamicSearch";
+import AvatarProfileDropdown from "../avatars/AvatarProfileDropdown";
 
 function Navbar() {
   return (
@@ -15,7 +16,7 @@ function Navbar() {
             href="#"
           >
             <img src={maguxStoreLogo} alt="magux-store logo" />
-            <h3 className="font-bold text-xl lg:-mt-1">Magux Store</h3>
+            <h3 className="font-extrabold! text-2xl! lg:-mt-1 text-zinc-800">Magux Store</h3>
           </Link>
 
           <div className="flex flex-1 items-center justify-end md:justify-between">
@@ -33,14 +34,17 @@ function Navbar() {
                   <Heart size={24} fill="black"/>
                   <span className="md:block hidden">Favorites</span>
                 </span> */}
-                <span className="flex items-center gap-2 icon-hover-animation">
-                  <ShoppingBag color="#51a2ff" size={24}/>
+                <span className="flex items-center lg:gap-3 gap-4 icon-hover-animation-2">
                   <span className="md:block hidden">Cart</span>
+                  <span className="bg-[#51a2ff] p-2 rounded-full">
+                    <ShoppingBag color="white" size={24} />
+                  </span>
+                    <AvatarProfileDropdown />
                 </span>
               </div>
 
               <button className="block rounded-full bg-white shadow shadow-slate-200 p-1.5 text-gray-600 hover:text-gray-600/75 md:hidden icon-hover-animation">
-                <Menu size={16} />
+                <Menu size={28} />
               </button>
             </div>
           </div>
