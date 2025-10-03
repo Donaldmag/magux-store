@@ -2,6 +2,7 @@
 import SelectDropdownVariant from "../dropdowns/SelectDropdownVariant";
 import { sizes, colors } from "../../data/data";
 import FlexibleButton from "../buttons/FlexibleButton";
+import FloatingPanel from "../panels/FloatingPanel";
 
 export default function ProductCard() {
   return (
@@ -32,26 +33,31 @@ export default function ProductCard() {
           </div>
         </dl>
 
-        <div className="mt-2 flex lg:justify-start justify-between items-center gap-4 text-xs">
-          <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-            <div className="mt-1.5 sm:mt-0">
-              {/* <SelectDropdown /> */}
-              <SelectDropdownVariant data={sizes} name={"Sizes"} />
-            </div>
-          </div>
-
-          <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-            <div className="mt-1.5 sm:mt-0">
-              <SelectDropdownVariant data={colors} name={"Colors"} />
-            </div>
-          </div>
+        <div className="mt-2 flex md:justify-start justify-between items-center gap-2 text-xs">
+          {/* <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2"> */}
+          {/* <SelectDropdown /> */}
+          {/* <SelectDropdownVariant data={sizes} name={"Sizes"} /> */}
+          <FloatingPanel data={colors} option_name={"colors"} />
+          <FloatingPanel data={sizes} option_name={"sizes"} />
+          {/* </div> */}
         </div>
 
         <div className="flex items-center justify-between lg:gap-1.5 gap-1 mt-3">
-          <FlexibleButton mode="" btnText="BUY NOW" />
-          <FlexibleButton mode="icon" />
+          <FlexibleButton
+            mode=""
+            btnText="BUY NOW"
+            variant={"outline"}
+            customClass={
+              "rounded-full hover:bg-blue-400 transition-all hover:text-white border-zinc-300 hover:border-none"
+            }
+          />
+          <FlexibleButton
+            mode="icon"
+            variant={"primary"}
+            customClass={"rounded-full bg-blue-400"}
+          />
         </div>
-        <div>
+        <div className="hidden">
           <FlexibleButton
             mode="link"
             underlined="dashed"

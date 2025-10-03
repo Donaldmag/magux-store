@@ -23,8 +23,8 @@ function App() {
         }}
       />
 
-      <div className="absolute w-full h-full z-100">
-        <Navbar />
+      <div className="absolute w-full h-full z-100 top-4">
+        <Navbar/>
 
         <Routes>
           <Route path="/" element={<Home />} />

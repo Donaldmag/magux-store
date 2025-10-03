@@ -8,3 +8,7 @@
 .icon-hover-animation{
   @apply cursor-pointer hover:scale-[1.1] transition
 }
+
+.icon-hover-animation-2{
+@apply hover:opacity-95 transition-all cursor-pointer
+}

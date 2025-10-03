@@ -1,5 +1,3 @@
-import {sizes, colors} from "../../data/data"
-
 const SelectDropdownVariant = props => {
     const { data, name } = props;
     return (
