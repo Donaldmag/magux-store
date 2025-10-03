@@ -24,7 +24,7 @@ const FloatingPanel = (props) => {
   return (
     <div>
       <FloatingPanelRoot>
-        <FloatingPanelTrigger className="md:max-w-28 md:w-28 max-sm:w-44 h-10 rounded-full!">
+        <FloatingPanelTrigger className="md:max-w-28 md:w-28 max-sm:w-36 h-10 rounded-full!">
           <div className="flex items-center justify-start sm:gap-1.5 gap-2">
             <div className="xs:text-sm text-xs font-semibold capitalize">
               {option_name}

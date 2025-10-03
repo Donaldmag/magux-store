@@ -13,7 +13,6 @@ function Navbar() {
           <Link
             to="/"
             className="flex items-center gap-3 text-blue-400"
-            href="#"
           >
             <img src={maguxStoreLogo} alt="magux-store logo" />
             <h3 className="font-extrabold! text-2xl! lg:-mt-1 text-zinc-800">Magux Store</h3>
@@ -39,11 +38,13 @@ function Navbar() {
                   <span className="bg-[#51a2ff] p-2 rounded-full">
                     <ShoppingBag color="white" size={24} />
                   </span>
-                    <AvatarProfileDropdown />
+                  <div className="max-lg:hidden">
+                    <AvatarProfileDropdown  className="hidden"/>
+                  </div>
                 </span>
               </div>
 
-              <button className="block rounded-full bg-white shadow shadow-slate-200 p-1.5 text-gray-600 hover:text-gray-600/75 md:hidden icon-hover-animation">
+              <button className="block rounded-full bg-white shadow shadow-slate-200 p-1.5 text-gray-600 hover:text-gray-600/75 lg:hidden icon-hover-animation">
                 <Menu size={28} />
               </button>
             </div>

@@ -52,7 +52,7 @@ export function SortingToolbar({
     };
 
     return (
-      <div className="space-y-2 max-md:hidden block">
+      <div className="space-y-2">
         <div
           ref={outsideClickRef}
           className={cn(
