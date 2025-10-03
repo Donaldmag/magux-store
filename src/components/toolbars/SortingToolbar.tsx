@@ -52,7 +52,7 @@ export function SortingToolbar({
     };
 
     return (
-      <div className="space-y-2">
+      <div className="space-y-2 max-md:hidden block">
         <div
           ref={outsideClickRef}
           className={cn(
@@ -63,7 +63,7 @@ export function SortingToolbar({
             className
           )}
         >
-          <div className="flex items-center w-full gap-2">
+          <div className="flex items-center gap-2">
             {toolbarItems.map((item) => (
               <motion.button
                 key={item.id}

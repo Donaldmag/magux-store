@@ -19,7 +19,7 @@ const TagsFiltersContainer = (props) => {
         </span> */}
 
         <span className="inline-flex items-center justify-center rounded-xl border border-zinc-500/25 px-2.5 py-0.5 min-h-8 text-zinc-500 dark:text-blue-100 bg-white">
-          <p className="md:text-[0.85rem] font-medium whitespace-nowrap">
+          <p className="md:text-[0.85rem] text-xs font-medium whitespace-nowrap">
             {tag_name}
           </p>
 
